@@ -28,6 +28,10 @@ A modern, web-based text icon generator built with React, TypeScript, and Tailwi
 - **Theme Support**: Light, Dark, and Auto modes
 - **PWA Ready**: Progressive Web App capabilities with offline support
 
+## Screenshot
+
+![](https://github.com/user-attachments/assets/dce51227-00f6-4ce2-8570-f1f44af18aaf)
+
 ## Tech Stack
 
 - **Framework**: React 18 + TypeScript
