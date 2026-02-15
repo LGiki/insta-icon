@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: 242 246 248;
+  --color-foreground: 19 33 40;
+  --color-panel: 246 250 251;
+  --color-border: 211 222 226;
+  --color-muted: 229 238 241;
+  --color-primary: 17 94 103;
+  --color-primary-foreground: 238 248 248;
+
+  font-family: 'Avenir Next', 'Segoe UI Variable', 'Trebuchet MS', sans-serif;
+  color: rgb(var(--color-foreground));
+  background: rgb(var(--color-background));
+}
+
+.dark {
+  --color-background: 15 24 32;
+  --color-foreground: 232 243 247;
+  --color-panel: 20 31 40;
+  --color-border: 44 63 74;
+  --color-muted: 31 46 57;
+  --color-primary: 50 152 165;
+  --color-primary-foreground: 239 250 250;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(255, 197, 119, 0.28), transparent 34%),
+    radial-gradient(circle at 92% 85%, rgba(70, 169, 173, 0.24), transparent 40%),
+    linear-gradient(180deg, #edf4f6 0%, #f8fbfc 100%);
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at 16% 12%, rgba(230, 154, 84, 0.18), transparent 32%),
+    radial-gradient(circle at 88% 84%, rgba(62, 129, 140, 0.22), transparent 38%),
+    linear-gradient(180deg, #0c1720 0%, #101d28 100%);
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border: none;
+}
